@@ -1,0 +1,2 @@
+[global.databases.self_crm]
+url = "mysql://self_crm:self_crm@rm-wz9ra72814q3t1yevo.mysql.rds.aliyuncs.com:3306/self_crm?useUnicode=true&characterEncoding=utf-8&useSSL=true&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai"
