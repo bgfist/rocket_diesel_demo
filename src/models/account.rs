@@ -1,14 +1,15 @@
 use diesel::Queryable;
 use std::time::SystemTime;
+use chrono::NaiveDateTime;
 
 #[derive(Queryable)]
 pub struct Account {
   id: i32,
   address: String,
   charge_user_id: Option<i32>,
-  created_at: SystemTime,
-  intention: Option<u8>,
-  is_cooperation: Option<u8>,
+  created_at: NaiveDateTime,
+  intention: Option<u16>,
+  is_cooperation: Option<u16>,
   is_follow: Option<bool>,
   is_know_all: bool,
   is_sign: bool,
